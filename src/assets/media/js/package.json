@@ -1,0 +1,22 @@
+{
+    "name": "select2widget",
+    "version": "0.2.0",
+    "description": "Compact tag-input with server search for Yii2",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "esbuild src/index.ts --bundle --outfile=dist/select2widget.js --target=es2020 --sourcemap && cp src/select2widget.css dist/select2widget.css",
+        "watch": "esbuild src/index.ts --bundle --outfile=dist/select2widget.js --target=es2020 --sourcemap --watch"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "Unlicense",
+    "devDependencies": {
+        "esbuild": "0.25.4",
+        "typescript": "^5.7.0"
+    },
+    "engines": {
+        "node": ">= 20.0.0",
+        "npm": ">= 10.0.0"
+    }
+}

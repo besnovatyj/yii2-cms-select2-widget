@@ -1,0 +1,4 @@
+# @see https://www.atlassian.com/ru/git/tutorials/saving-changes/gitignore#git-ignore-patterns
+
+.npm
+node_modules
