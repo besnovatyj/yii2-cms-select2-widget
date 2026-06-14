@@ -11,6 +11,11 @@
     }
   ],
   "minimum-stability": "dev",
+  "extra": {
+    "bescms": {
+      "kind": "package"
+    }
+  },
   "prefer-stable": true,
   "keywords": [
     "yii2",
