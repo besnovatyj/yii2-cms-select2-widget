@@ -57,7 +57,6 @@ class Select2Widget extends InputWidget
             'headers' => [
                 'x-csrf-token' => Yii::$app->request->getCsrfToken(),
                 'X-Requested-With' => 'XMLHttpRequest',
-                'X-Requested-With-Fetch' => 'true',
             ],
             'initialValue' => $initialData,
             'inputName' => $inputName,
