@@ -1,7 +1,6 @@
 {
   "name": "besnovatyj/yii2-cms-select2-widget",
   "description": "Select2 виджет для Yii2 CMS.",
-  "version": "1.0.0",
   "type": "yii2-extension",
   "license": "MIT",
   "authors": [
