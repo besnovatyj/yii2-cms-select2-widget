@@ -71,12 +71,17 @@ class Select2Widget extends InputWidget
             $hiddenInputs .= Html::hiddenInput($inputName, $value);
         }
 
-        // Рендер контейнера виджета
-        return Html::tag('div', $hiddenInputs, [
+        // Рендер контейнера виджета. Классы из options переносятся на контейнер: среди них
+        // `is-invalid` от ActiveField, без которого Bootstrap скрывает соседний `.invalid-feedback`.
+        $containerOptions = [
             'id' => $widgetId,
             'class' => 's2w',
             'data-config' => $config,
-        ]);
+        ];
+        if (!empty($this->options['class'])) {
+            Html::addCssClass($containerOptions, $this->options['class']);
+        }
+        return Html::tag('div', $hiddenInputs, $containerOptions);
     }
 
     /**
